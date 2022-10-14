@@ -18,8 +18,10 @@
   <div class="main">
     <div class="product__card">
       <div class="product__image">
-        <img class="desktop_image" src="./images/image-product-desktop.jpg" alt="Image Product" />
-        <img class="mobile_image" src="./images/image-product-mobile.jpg" alt="Image Product" />
+        <picture>
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width:775px)">
+          <img src="./images/image-product-mobile.jpg" alt="Image Product" />
+        </picture>
       </div>
       <div class="product__content">
         <h4 class="product__category">Perfume</h4>
